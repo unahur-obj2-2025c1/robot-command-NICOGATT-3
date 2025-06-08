@@ -19,5 +19,10 @@ public class Info extends Tarea {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @Override
+    public Integer duracionDeLaTarea() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
 
 }

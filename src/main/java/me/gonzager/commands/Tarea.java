@@ -1,5 +1,7 @@
 package me.gonzager.commands;
 
+
+
 import me.gonzager.domain.Habitacion;
 import me.gonzager.domain.Robot;
 
@@ -31,5 +33,7 @@ public abstract class Tarea  {
     public abstract void execute(Robot robot);
 
     public abstract void consumirBateria(Robot robot);
+
+    public abstract Integer duracionDeLaTarea(); 
 
 }

@@ -18,6 +18,11 @@ public class Limpiar extends Tarea {
     public void consumirBateria(Robot robot) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+    @Override
+    public Integer duracionDeLaTarea() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 
 }

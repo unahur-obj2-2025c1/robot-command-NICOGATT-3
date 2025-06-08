@@ -11,13 +11,27 @@ public class EncenderLuz extends Tarea {
 
     @Override
     public void execute(Robot robot) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.consumirBateria(robot);
+        if(!this.getHabitacion().estaEncendida()){
+            this.getHabitacion().prenderLuz();
+        }
     }
 
     @Override
     public void consumirBateria(Robot robot) {
+        if(this.getHabitacion().estaEncendida()) {
+            robot.disminuirBateria(0.01);
+        } else {
+            robot.disminuirBateria(0.05);
+        }
+    }
+
+    @Override
+    public Integer duracionDeLaTarea() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+    
     
 
 }

@@ -19,6 +19,11 @@ public class Cargar extends Tarea {
     public void consumirBateria(Robot robot) {
         robot.disminuirBateria(0.0);
     }
+
+    @Override
+    public Integer duracionDeLaTarea() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 
 }
