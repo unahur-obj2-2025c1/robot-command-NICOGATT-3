@@ -15,7 +15,7 @@ public class ApagarLuz extends Tarea {
         if(this.getHabitacion().estaEncendida()){
             this.getHabitacion().apagarLuz();
         }
-
+        
     }
 
     @Override

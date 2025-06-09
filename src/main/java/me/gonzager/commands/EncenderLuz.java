@@ -28,7 +28,7 @@ public class EncenderLuz extends Tarea {
 
     @Override
     public Integer duracionDeLaTarea() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.getHabitacion().estaEncendida() ? 15 : 25;
     }
 
     
