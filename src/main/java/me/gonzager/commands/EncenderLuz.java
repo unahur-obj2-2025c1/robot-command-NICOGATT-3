@@ -27,8 +27,8 @@ public class EncenderLuz extends Tarea {
     }
 
     @Override
-    public Integer duracionDeLaTarea() {
-        return this.getHabitacion().estaEncendida() ? 15 : 25;
+    public void duracionDeLaTarea(Robot robot ) {
+        
     }
 
     

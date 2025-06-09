@@ -20,7 +20,7 @@ public class Info extends Tarea {
     }
 
     @Override
-    public Integer duracionDeLaTarea() {
+    public void duracionDeLaTarea(Robot robot) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

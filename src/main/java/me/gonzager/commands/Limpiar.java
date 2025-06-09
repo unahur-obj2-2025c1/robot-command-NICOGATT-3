@@ -20,7 +20,7 @@ public class Limpiar extends Tarea {
     }
 
     @Override
-    public Integer duracionDeLaTarea() {
+    public void duracionDeLaTarea(Robot robot) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

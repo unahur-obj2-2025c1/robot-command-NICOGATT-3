@@ -34,6 +34,6 @@ public abstract class Tarea  {
 
     public abstract void consumirBateria(Robot robot);
 
-    public abstract Integer duracionDeLaTarea(); 
+    public abstract void duracionDeLaTarea(Robot robot); 
 
 }

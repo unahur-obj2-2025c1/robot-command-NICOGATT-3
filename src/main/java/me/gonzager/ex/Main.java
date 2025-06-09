@@ -16,6 +16,6 @@ public class Main {
         robot.run();
 
         System.out.println(robot.getNivelDeBateria());
-        System.out.println(carga.duracionDeLaTarea());
+        System.out.println(carga.getDuracion());
     }
 }
