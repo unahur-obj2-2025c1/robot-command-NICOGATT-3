@@ -11,6 +11,7 @@ public class ApagarLuz extends Tarea {
 
     @Override
     public void execute(Robot robot) {
+        this.duracionDeLaTarea(robot);
         this.consumirBateria(robot);
         if(this.getHabitacion().estaEncendida()){
             this.getHabitacion().apagarLuz();
@@ -29,6 +30,9 @@ public class ApagarLuz extends Tarea {
 
     @Override
     public void duracionDeLaTarea(Robot robot) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(!this.getHabitacion().estaEncendida()) 
+            setDuracion(25); 
+        else 
+            setDuracion(90); 
     }
 }

@@ -16,7 +16,7 @@ public class CargaTest {
 
     @BeforeEach
     void setUp() {
-        cocina = new Habitacion(false, true); 
+        cocina = new Habitacion(false, true, 200); 
         tareaCargar = new Cargar(cocina, 50); 
         robot = new Robot(Arrays.asList(tareaCargar), 60.0);
     }

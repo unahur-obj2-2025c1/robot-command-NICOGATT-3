@@ -11,6 +11,7 @@ public class Cargar extends Tarea {
 
     @Override
     public void execute(Robot robot) {
+        this.duracionDeLaTarea(robot);
         robot.cargar(this.getDuracion());
         robot.agregarTarea(this);
     }

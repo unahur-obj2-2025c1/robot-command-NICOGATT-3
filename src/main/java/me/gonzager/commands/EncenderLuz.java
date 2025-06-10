@@ -11,10 +11,12 @@ public class EncenderLuz extends Tarea {
 
     @Override
     public void execute(Robot robot) {
+        this.duracionDeLaTarea(robot);
         this.consumirBateria(robot);
         if(!this.getHabitacion().estaEncendida()){
             this.getHabitacion().prenderLuz();
         }
+        robot.agregarTarea(this);
     }
 
     @Override
@@ -28,8 +30,13 @@ public class EncenderLuz extends Tarea {
 
     @Override
     public void duracionDeLaTarea(Robot robot ) {
-        
+        if(this.getHabitacion().estaEncendida())
+            setDuracion(25); 
+        else 
+            setDuracion(90);
     }
+
+	
 
     
     

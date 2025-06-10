@@ -3,10 +3,12 @@ package me.gonzager.domain;
 public class Habitacion {
     private Boolean luz; 
     private Boolean limpio;  
+    private Integer metrosDeLaHabitacion; 
 
-    public Habitacion(Boolean luz, Boolean limpio) {
+    public Habitacion(Boolean luz, Boolean limpio, Integer metros) {
         this.luz = luz; 
         this.limpio = limpio; 
+        this.metrosDeLaHabitacion = metros; 
     }
 
     public Boolean getLuz() {
@@ -35,5 +37,17 @@ public class Habitacion {
 
     public void apagarLuz() {
         this.setLuz(false);
+    }
+
+    public Integer getMetrosDeLaHabitacion() {
+        return metrosDeLaHabitacion;
+    }
+
+    public void setMetrosDeLaHabitacion(Integer metrosDeLaHabitacion) {
+        this.metrosDeLaHabitacion = metrosDeLaHabitacion;
+    }
+    
+    public void limpiarHabitacion() {
+        setLimpio(true);
     }
 }
